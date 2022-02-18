@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Cinzel:wght@400;500;600;700;800;900&family=Gideon+Roman&family=IM+Fell+French+Canon+SC&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shalimar&display=swap');
+
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    /*top-bottom right-left */
+    padding: 30px 200px;
+    border-bottom: dotted lightgray;
+}
+
+.navigation a{
+    display: inline-block;
+    color: #070707;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    margin-top: 10px;   
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+}
+
+header .point {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4f52b1;
+    color: #f6f6f8;
+    box-shadow: 0 2px 4px black;
+    border-radius: 10px;
+}
+
+section{
+    padding: 150px 200px;
+}
+
+.main{
+    width: 100%;
+    /*vh = view port = all screen*/
+    min-height: 100vh;
+    display: flex;
+    /*should be with flex*/
+    align-items: center;
+    justify-content: center;
+}
+
+.desc{
+    width: 50%;
+}
+
+.desc h1 {
+    font-size: 3.5em;
+}
+
+.desc p{
+    margin-top: 30px;
+    line-height: 1.5em;
+}
+
+.buttons{
+    margin-top: 50px;
+}
+
+.desc .first-btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #4f52b1;
+    color: #f6f6f8;
+    box-shadow: 0 2px 4px black;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.desc .second-btn {
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 2px solid #4f52b1;
+    background-color: transparent;
+    color: #070707;
+    box-shadow: 0 2px 4px black;
+    border-radius: 10px;
+}
+
+.img{
+    width: 50%;
+    text-align: center;
+    margin-right:50px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    color: #a0c9eb;
+    padding: 10px 40px;
+    font-size: 2em;
+    filter: drop-shadow(0 1px 1px black);
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    header .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    header .point {
+        font-size: 0.8em;
+    }
+
+    .navigation a {
+        font-size: 0.8em;
+        padding-left: 10px;
+    }
+
+    section{
+        padding: 5px 30px;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc{
+        margin-top: 30px;
+        height: 50%;
+        width: 100%;
+    }
+
+    .desc h1 {
+        font-size: 2.2em;
+    }
+
+    .desc p{
+        margin-top: 20px;
+        line-height: 1.8em;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+    .desc .first-btn {
+        padding: 10px 20px;
+    }
+    
+    .desc .second-btn {
+        padding: 8px 10px;
+    }
+
+    .img{
+        height: 30%;
+        width: 100%;
+        margin-right:0%;
+    }
+
+    .img img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 641px){
+    body{
+        /* means 1em = 12px */
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px){
+    body {
+        /* means 1em = 10 px*/
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 800px){
+
+    .section{
+        padding: 50px 50px;
+    }
+    .main {
+        flex-direction: row;
+    }
+
+}
